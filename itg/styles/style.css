@@ -1,0 +1,178 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+label,
+input {
+  width: 100%;
+  font-size: 25px;
+}
+
+body {
+  min-height: 100vh;
+  background: #eaeaea;
+}
+
+.container {
+  max-width: 1063px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label:before {
+  content: "\2714";
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  margin-right: 1em;
+  vertical-align: bottom;
+  color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.5em;
+  vertical-align: top;
+}
+
+input[type="radio"] + label:active:before {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+input[type="radio"]:checked + label:before {
+  background: #eaeaea;
+  border-color: gray;
+  color: black;
+}
+
+.validation_form #submit {
+  background: #e10a0a;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 34px;
+  border-radius: 30px;
+  width: auto;
+  padding: 0.5rem 6rem;
+  outline: none;
+  border: none;
+  margin: 3rem;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .validation_form #submit {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+  }
+}
+
+.validation_form input {
+  font-family: "Roboto", sans-serif;
+}
+
+.validation_form .form_name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .validation_form .form_name {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+.validation_form #radio_btns {
+  display: inline-block;
+}
+
+.validation_form .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.validation_form .radio input {
+  width: 1%;
+}
+
+.validation_form .input_wrapper {
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.validation_form .input_wrapper.fname {
+  width: 100%;
+}
+
+.validation_form .input_wrapper.lname {
+  padding-left: 0.5rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .validation_form .input_wrapper.lname {
+    padding-left: 0;
+  }
+}
+
+.validation_form .input_wrapper input[type="text"],
+.validation_form .input_wrapper input[type="email"] {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+}
+
+.validation_form .input_wrapper label {
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+#radio_wrapper {
+  display: inline-block;
+}
+
+.error small {
+  visibility: visible;
+  font-family: "Roboto", sans-serif;
+  color: #e10a0a;
+}
+
+small {
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

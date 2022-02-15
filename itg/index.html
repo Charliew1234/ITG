@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link re="stylesheet" href=".styles/reset.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        action="/"
+        name="validation_form"
+        id="validation_form"
+        class="validation_form"
+      >
+        <div id="radio_wrapper">
+          <div class="input_wrapper radio">
+            <input
+              name="account_holder"
+              type="radio"
+              id="broadband_holder"
+              onclick="accountCheck()"
+            />
+            <label for="broadband_holder"
+              >I am a TV / Broadband account holder</label
+            >
+          </div>
+          <div class="input_wrapper radio">
+            <input
+              name="account_holder"
+              type="radio"
+              id="mobile_holder"
+              onclick="accountCheck()"
+            />
+            <label for="mobile_holder">I am a Mobile account holder</label>
+          </div>
+          <small></small>
+        </div>
+        <div id="account" class="input_wrapper">
+          <label for="acc_no">Account Number</label>
+          <input id="acc_no" placeholder="7811510916" type="text" />
+          <small></small>
+        </div>
+        <div id="mobile" class="input_wrapper">
+          <label for="phone_no">Mobile Number</label>
+          <input
+            id="phone_no"
+            name="phone_no"
+            placeholder="07714865978"
+            type="text"
+          />
+          <small></small>
+        </div>
+        <div class="form_name">
+          <div class="input_wrapper fname">
+            <label for="acc_fn">Account holder first name</label>
+            <input id="acc_fn" name="acc_fn" placeholder="John" type="text" />
+            <small></small>
+          </div>
+          <div class="input_wrapper lname">
+            <label for="acc_ln">Account holder last name</label>
+            <input id="acc_ln" name="acc_ln" placeholder="Smith" type="text" />
+            <small></small>
+          </div>
+        </div>
+        <div class="input_wrapper">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            placeholder="placeholderemail@gmail.com"
+            id="email"
+            type="email"
+          />
+          <small></small>
+        </div>
+        <div class="input_wrapper">
+          <label for="postcode">Postcode</label>
+          <input
+            id="postcode"
+            placeholder="WC1A 2SL"
+            name="psotcode"
+            type="text"
+          />
+          <small></small>
+        </div>
+        <input value="Enter now" name="submit" id="submit" type="submit" />
+      </form>
+      <script type="text/javascript" src="javascript/script.js"></script>
+    </div>
+  </body>
+</html>
